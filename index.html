@@ -149,9 +149,14 @@
       <p style="margin-top: 16px;">
         Inspired by the work of bell hooks.
       </p>
-      <a href="https://apps.apple.com/app/meet-bell/id0000000000" class="badge">
+      <a href="https://apps.apple.com/app/meet-bell/id0000000000" class="badge" id="app-store-badge">
         <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
       </a>
+      <script>
+        if (new URLSearchParams(window.location.search).has('inapp')) {
+          document.getElementById('app-store-badge').style.display = 'none';
+        }
+      </script>
     </div>
 
     <div class="quote">The moment we choose to love we begin to move against domination, against oppression. The moment we choose to love we begin to move towards freedom.</div>
