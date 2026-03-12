@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>meet bell</title>
+  <meta name="description" content="An app for practicing emotional honesty. Inspired by bell hooks.">
+  <link rel="icon" href="/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --background: #fcc169;
+      --foreground: #2d2420;
+      --accent: #de746a;
+      --surface: #f0ad4e;
+      --muted: #9a7a4a;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --background: #1a1410;
+        --foreground: #e8ddd0;
+        --accent: #d48494;
+        --surface: #2a2018;
+        --muted: #8a7a68;
+      }
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--background);
+      color: var(--foreground);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      max-width: 640px;
+      width: 100%;
+      padding: 80px 24px 60px;
+    }
+
+    .hero {
+      margin-bottom: 64px;
+    }
+
+    .hero h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 500;
+      font-style: italic;
+      font-size: 3rem;
+      line-height: 1.2;
+      color: var(--accent);
+      margin-bottom: 24px;
+    }
+
+    .hero p {
+      font-size: 1.05rem;
+      line-height: 1.8;
+      color: var(--foreground);
+      opacity: 0.85;
+    }
+
+    .badge {
+      display: inline-block;
+      margin-top: 32px;
+    }
+
+    .badge img {
+      height: 54px;
+    }
+
+    .modes {
+      margin-bottom: 64px;
+    }
+
+    .modes h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 500;
+      font-size: 1.5rem;
+      color: var(--accent);
+      margin-bottom: 32px;
+    }
+
+    .mode {
+      margin-bottom: 28px;
+    }
+
+    .mode h3 {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--muted);
+      margin-bottom: 6px;
+    }
+
+    .mode p {
+      font-size: 0.95rem;
+      line-height: 1.7;
+      opacity: 0.85;
+    }
+
+    .quote {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-size: 1.3rem;
+      line-height: 1.6;
+      color: var(--accent);
+      border-left: 2px solid var(--accent);
+      padding-left: 20px;
+      margin-bottom: 8px;
+    }
+
+    .attribution {
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-bottom: 64px;
+    }
+
+    footer {
+      font-size: 0.8rem;
+      color: var(--muted);
+      padding-top: 32px;
+      border-top: 1px solid var(--muted);
+      opacity: 0.6;
+    }
+
+    footer a {
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="hero">
+      <h1>meet bell</h1>
+      <p>
+        An app for practicing emotional honesty. Five modes that help you
+        check in with yourself, name what you feel, and say what you mean.
+        No accounts. No data stored. Just you and the question in front of you.
+      </p>
+      <p style="margin-top: 16px;">
+        Inspired by the work of bell hooks.
+      </p>
+      <a href="https://apps.apple.com/app/meet-bell/id0000000000" class="badge">
+        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+      </a>
+    </div>
+
+    <div class="quote">The moment we choose to love we begin to move against domination, against oppression. The moment we choose to love we begin to move towards freedom.</div>
+    <p class="attribution">bell hooks, <em>All About Love</em></p>
+
+    <div class="modes">
+      <h2>Five modes</h2>
+
+      <div class="mode">
+        <h3>Check-in</h3>
+        <p>A daily question that cuts past "I'm fine." Answer honestly, get a brief reflection back.</p>
+      </div>
+
+      <div class="mode">
+        <h3>Mirror</h3>
+        <p>Talk about what's on your mind. bell listens and reflects back what she hears underneath.</p>
+      </div>
+
+      <div class="mode">
+        <h3>Feeling</h3>
+        <p>Can't name the emotion? Answer a few questions and bell helps you find the word for it.</p>
+      </div>
+
+      <div class="mode">
+        <h3>Draft</h3>
+        <p>Need to say something hard to someone? Write the raw version here. bell helps you shape it into something honest and clear.</p>
+      </div>
+
+      <div class="mode">
+        <h3>Grow</h3>
+        <p>Explore an emotional pattern or question in depth. bell draws on research and lived truth to help you see it differently.</p>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2026 Hardmode LLC &middot; <a href="/privacy">Privacy Policy</a> &middot; <a href="/support">Support</a></p>
+    </footer>
+  </div>
+</body>
+</html>
