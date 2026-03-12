@@ -153,7 +153,11 @@
         <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
       </a>
       <script>
-        if (new URLSearchParams(window.location.search).has('inapp')) {
+        try {
+          if (window.location.search.indexOf('inapp') !== -1 || window.self !== window.top) {
+            document.getElementById('app-store-badge').style.display = 'none';
+          }
+        } catch(e) {
           document.getElementById('app-store-badge').style.display = 'none';
         }
       </script>
